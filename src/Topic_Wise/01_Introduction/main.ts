@@ -3,12 +3,12 @@ import App from "./App.vue";
 import Home from "./pages/Home.vue";
 import Posts from "./pages/Posts.vue";
 import CreatePost from "./pages/CreatePost.vue";
-import { createRouter, createWebHistory } from "vue-router";
+import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
 
 // Define some routes
 // Each route should map to a component.
 // We'll talk about nested routes later.
-const routes = [
+const routes: RouteRecordRaw[] = [
   {
     path: "/",
     component: Home,
